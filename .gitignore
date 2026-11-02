@@ -1,0 +1,53 @@
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# ============ 虚拟环境 ============
+.venv/
+venv/
+env/
+ENV/
+docker/.venv/
+
+# ============ 密钥与本地配置（重要）============
+conf/app_config.yaml
+!conf/app_config.example.yaml
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ============ 大体积二进制，不入库 ============
+# 模型权重 1.3G，超过 GitHub 单文件 100MB 上限，按 README 自行下载
+docker/embedding/bge-large-zh-v1.5/
+
+# ============ 运行时产物 ============
+logs/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# ============ 编辑器 / 系统 ============
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ============ 临时文件 ============
+_tmp_*
+*.tmp
+*.bak
+
+# ============ 工具内部数据 ============
+.workbuddy/
+
+# ============ 个人面试准备材料，不入公开仓库 ============
+docs/检索层面试题库.md
